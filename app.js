@@ -125,6 +125,7 @@ function getFriendNames(person){
         return [];
     }
 
+    //this is recurrsion
    for(const friend of person.friends){
         collectedNames.push(friend.name);
         collectedNames.push(...getFriendNames(friend));
